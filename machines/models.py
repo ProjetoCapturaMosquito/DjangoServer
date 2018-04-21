@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+class Machine(models.Model):
+    machine_id = models.AutoField(primary_key=True)
+    has_aedes = models.BooleanField(default=False)
